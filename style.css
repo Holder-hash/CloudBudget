@@ -141,7 +141,7 @@ nav>ul>li {
 /*header overview*/
 
 .header-overview {
-    width: 540px;
+    max-width: 540px;
     height: auto;
     margin: 177px auto;
     display: flex;
@@ -186,6 +186,23 @@ nav>ul>li {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .header-overview>h1 {
+        font-size: 50px;
+    }
+    .header-overview>p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .header-overview>h1 {
+        font-size: 30px;
+    }
+    .header-overview>p {
+        font-size: 18px;
+    }
 }
 
 /*OVERVIEW*/
