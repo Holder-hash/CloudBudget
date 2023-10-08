@@ -304,3 +304,48 @@ main>section:nth-child(3)>div>.card>p {
     font-weight: 400;
     line-height: normal;
 }
+
+/* SECTION 4 */
+
+main>section:nth-child(4) {
+    width: 100%;
+    height: 500px;
+    background: #ED4C5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+}
+main>section:nth-child(4)>div {
+    height: 311px;
+    display: flex;
+    gap: 125px;
+    align-items: center;
+}
+main>section:nth-child(4)>div>.text-contain {
+    width: 445px;
+}
+main>section:nth-child(4)>div>.text-contain>h3 {
+    padding-bottom: 48px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+main>section:nth-child(4)>div>.text-contain>p {
+    padding-bottom: 40px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+main>section:nth-child(4)>div>.text-contain>.icons-contain {
+    display: flex;
+    gap: 23px;
+}
