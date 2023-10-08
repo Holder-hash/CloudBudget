@@ -92,6 +92,33 @@ nav {
         display: flex;
     }
 }
+@media screen and (max-width: 600px) {
+    nav {
+        right: 5.8%;
+    }
+    nav>ul {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav {
+        gap: 5px;
+        right: 5%;
+    }
+    nav>ul {
+        font-size: 12px;
+    }
+    .login-btn {
+        max-width: 70px;
+        min-height: 15px;
+    }
+    .login-btn p {
+        font-size: 14px;
+    }
+    .open {
+        height: 240px;
+    }
+}
 
 .header-contain>.logo {
     display: flex;
