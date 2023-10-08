@@ -177,3 +177,77 @@ main>section:nth-child(1)>div>img {
     width: 445px;
     height: inherit;
 }
+
+/* POSSIBILITIES */
+main>section:nth-child(2) {
+    margin-top: 63px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main>section:nth-child(2)>h2 {
+    margin-bottom: 73px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+main>section:nth-child(2)>div {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 124px;
+}
+main>section:nth-child(2)>div>.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main>section:nth-child(2)>div>.card>div {
+    padding: 26px 0 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 293px;
+    height: auto;
+    margin-top: -92px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
+}
+main>section:nth-child(2)>div>.card>div>h3 {
+    width: 229px;
+    color: #101010;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+main>section:nth-child(2)>div>.card>div>p {
+    width: 229px;
+    color: #101010;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+main>section:nth-child(2)>div>.card>div>a {
+    color: #ED4C5C;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    text-decoration: none;
+}
