@@ -638,3 +638,9 @@ footer>div>span {
         width: 540px;
     }
 }
+@media screen and (max-width: 600px) {
+    footer>div {
+        width: 345px;
+        margin: 0 auto;
+    }
+}
