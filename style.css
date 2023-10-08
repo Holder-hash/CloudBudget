@@ -21,19 +21,110 @@ header {
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%);
 }
 
-nav {
+.header-contain {
     width: 80%;
-    display: flex;
-    margin: auto;
     padding-top: 55px;
-    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-nav>.logo {
+nav {  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    transition: .4s;
+}
+
+.burger-btn {
+    width: 45px;
+    height: 35px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white;
+}
+.burger-btn span {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    background-color: white;
+}
+.burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+.burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.open {
+    display: flex;
+    height: 260px;
+    overflow: none;
+}
+.descent {
+    transform: translateY(100px);
+}
+
+@media screen and (max-width: 1100px){
+    .header-contain {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: auto;
+        position: absolute;
+        right: 6.8%;
+        top: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    nav>ul {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+    .burger-btn {
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav {
+        right: 5.8%;
+    }
+    nav>ul {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav {
+        gap: 5px;
+        right: 5%;
+    }
+    nav>ul {
+        font-size: 12px;
+    }
+    .login-btn {
+        max-width: 70px;
+        min-height: 15px;
+    }
+    .login-btn p {
+        font-size: 14px;
+    }
+    .open {
+        height: 240px;
+    }
+}
+
+.header-contain>.logo {
     display: flex;
     align-items: center;
 }
-nav>.logo>p {
+.header-contain>.logo>p {
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -47,6 +138,7 @@ nav>ul {
     list-style: none;
     align-items: center;
     gap: 22px;
+    margin: 0 auto;
 }
 nav>ul>li {
     font-family: Roboto;
@@ -56,7 +148,7 @@ nav>ul>li {
     text-transform: uppercase;
 }
 
-nav>.login-btn {
+.login-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,13 +168,14 @@ nav>.login-btn {
 /*header overview*/
 
 .header-overview {
-    width: 540px;
+    max-width: 540px;
     height: auto;
     margin: 177px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    transition: .5s;
 }
 .header-overview>h1 {
     color: #FFF;
@@ -122,6 +215,23 @@ nav>.login-btn {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+    .header-overview>h1 {
+        font-size: 50px;
+    }
+    .header-overview>p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .header-overview>h1 {
+        font-size: 30px;
+    }
+    .header-overview>p {
+        font-size: 18px;
+    }
+}
+
 /*OVERVIEW*/
 
 main>section:nth-child(1) {
@@ -143,7 +253,7 @@ main>section:nth-child(1)>div {
     gap: 125px;
 }
 main>section:nth-child(1)>div>div {
-    width: 445px;
+    max-width: 445px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,8 +288,7 @@ main>section:nth-child(1)>div>div>a {
     text-decoration: none;
 }
 main>section:nth-child(1)>div>img {
-    width: 445px;
-    height: 311px;
+    max-width: 445px;
     flex-shrink: 0;
 }
 
@@ -187,6 +296,17 @@ main>section:nth-child(1)>div>img {
     main>section:nth-child(1)>div {
         flex-direction: column-reverse;
         gap: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main>section:nth-child(1)>div>img {
+        width: 345px;
+        flex-shrink: 0;
+    }
+    main>section:nth-child(1)>div>div>p,
+    main>section:nth-child(1)>div>div>h2,
+    main>section:nth-child(1)>div>div>a {
+        padding: 0 50px;
     }
 }
 
@@ -340,7 +460,7 @@ main>section:nth-child(4)>div {
     align-items: center;
 }
 main>section:nth-child(4)>div>.text-contain {
-    width: 445px;
+    max-width: 445px;
 }
 main>section:nth-child(4)>div>.text-contain>h3 {
     padding-bottom: 48px;
@@ -372,6 +492,20 @@ main>section:nth-child(4)>div>.text-contain>.icons-contain {
         gap: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main>section:nth-child(4)>div>img {
+        width: 345px;
+    }
+    main>section:nth-child(4)>div>.text-contain {
+        text-align: center;
+    }
+    main>section:nth-child(4)>div>.text-contain>p {
+        padding: 0 40px  40px;
+    }
+    main>section:nth-child(4)>div>.text-contain>.icons-contain {
+        padding: 0 40px;
     }
 }
 
@@ -436,6 +570,28 @@ main>section:nth-child(5)>div>form {
         padding-bottom: 30px;
     }
 }
+@media screen and (max-width: 600px) {
+    main>section:nth-child(5)>div {
+        max-width: 345px;
+    }
+    main>section:nth-child(5)>div>form {
+        width: 345px;
+    }
+}
+@media screen and (max-width: 400px) {
+    main>section:nth-child(5)>div>form {
+        width: 245px;
+    }
+    main>section:nth-child(5)>div>form>input {
+        width: 100%;
+    }
+    main>section:nth-child(5)>div>form>input:last-child {
+        margin-left: 31px;
+        min-width: 281px;
+        align-self: center;
+    }
+}
+
 main>section:nth-child(5)>div>form>input:not(:last-child) {
     max-width: 100%;
     height: 60px;
@@ -507,5 +663,11 @@ footer>div>span {
 @media screen and (max-width: 1100px) {
     footer>div {
         width: 540px;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer>div {
+        width: 345px;
+        margin: 0 auto;
     }
 }
