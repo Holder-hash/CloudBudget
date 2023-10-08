@@ -121,3 +121,59 @@ nav>.login-btn {
     line-height: normal;
     text-transform: uppercase;
 }
+
+/*OVERVIEW*/
+
+main>section:nth-child(1) {
+    width: 100%;
+    height: 500px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main>section:nth-child(1)>div {
+    height: 311px;
+    max-width: 1115px;
+    display: flex;
+    gap: 125px;
+}
+main>section:nth-child(1)>div>div {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main>section:nth-child(1)>div>div>h2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 42px;
+}
+main>section:nth-child(1)>div>div>p {
+    color: #000;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    margin-bottom: 21px;
+}
+main>section:nth-child(1)>div>div>a {
+    color: #ED4C5C;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    text-decoration: none;
+}
+main>section:nth-child(1)>div>img {
+    width: 445px;
+    height: inherit;
+}
