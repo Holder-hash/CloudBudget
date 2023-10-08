@@ -29,11 +29,46 @@ header {
     justify-content: space-evenly;
 }
 
-nav {
-    
+nav {  
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 5px;
+}
+
+.burger-btn {
+    width: 45px;
+    height: 35px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white;
+}
+.burger-btn span {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    background-color: white;
+}
+.burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+.burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+@media screen and (max-width: 1100px){
+    .header-contain {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    nav {
+        display: none;
+    }
+    .burger-btn {
+        display: flex;
+    }
 }
 
 .header-contain>.logo {
