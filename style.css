@@ -8,6 +8,10 @@
     font-family: 'Unbounded', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     width: 100%;
     height: 782px;
@@ -45,6 +49,7 @@ nav {
     align-items: center;
     justify-content: center;
     border: 1.5px solid white;
+    cursor: pointer;
 }
 .burger-btn span {
     position: absolute;
@@ -151,12 +156,13 @@ nav>ul {
     gap: 22px;
     margin: 0 auto;
 }
-nav>ul>li {
+nav>ul>li>a {
     font-family: Roboto;
     color: #FFF;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .login-btn {
@@ -174,6 +180,7 @@ nav>ul>li {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /*header overview*/
@@ -215,6 +222,7 @@ nav>ul>li {
     justify-content: center;
     border-radius: 6px;
     background: #FFF;
+    cursor: pointer;
 }
 .header-overview-btn>p {
     color: #ED4C5C;
@@ -496,6 +504,9 @@ main>section:nth-child(4)>div>.text-contain>.icons-contain {
     display: flex;
     gap: 23px;
 }
+main>section:nth-child(4)>div>.text-contain>.icons-contain>svg{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1100px) {
     main>section:nth-child(4)>div {
@@ -628,6 +639,7 @@ main>section:nth-child(5)>div>form>input:last-child {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* FOOTER */
