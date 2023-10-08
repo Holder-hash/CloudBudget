@@ -226,7 +226,7 @@ main>section:nth-child(1)>div {
     gap: 125px;
 }
 main>section:nth-child(1)>div>div {
-    width: 445px;
+    max-width: 445px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,8 +261,7 @@ main>section:nth-child(1)>div>div>a {
     text-decoration: none;
 }
 main>section:nth-child(1)>div>img {
-    width: 445px;
-    height: 311px;
+    max-width: 445px;
     flex-shrink: 0;
 }
 
@@ -270,6 +269,17 @@ main>section:nth-child(1)>div>img {
     main>section:nth-child(1)>div {
         flex-direction: column-reverse;
         gap: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main>section:nth-child(1)>div>img {
+        width: 345px;
+        flex-shrink: 0;
+    }
+    main>section:nth-child(1)>div>div>p,
+    main>section:nth-child(1)>div>div>h2,
+    main>section:nth-child(1)>div>div>a {
+        padding: 0 50px;
     }
 }
 
@@ -423,7 +433,7 @@ main>section:nth-child(4)>div {
     align-items: center;
 }
 main>section:nth-child(4)>div>.text-contain {
-    width: 445px;
+    max-width: 445px;
 }
 main>section:nth-child(4)>div>.text-contain>h3 {
     padding-bottom: 48px;
@@ -455,6 +465,20 @@ main>section:nth-child(4)>div>.text-contain>.icons-contain {
         gap: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main>section:nth-child(4)>div>img {
+        width: 345px;
+    }
+    main>section:nth-child(4)>div>.text-contain {
+        text-align: center;
+    }
+    main>section:nth-child(4)>div>.text-contain>p {
+        padding: 0 40px  40px;
+    }
+    main>section:nth-child(4)>div>.text-contain>.icons-contain {
+        padding: 0 40px;
     }
 }
 
@@ -519,6 +543,28 @@ main>section:nth-child(5)>div>form {
         padding-bottom: 30px;
     }
 }
+@media screen and (max-width: 600px) {
+    main>section:nth-child(5)>div {
+        max-width: 345px;
+    }
+    main>section:nth-child(5)>div>form {
+        width: 345px;
+    }
+}
+@media screen and (max-width: 400px) {
+    main>section:nth-child(5)>div>form {
+        width: 245px;
+    }
+    main>section:nth-child(5)>div>form>input {
+        width: 100%;
+    }
+    main>section:nth-child(5)>div>form>input:last-child {
+        margin-left: 31px;
+        min-width: 281px;
+        align-self: center;
+    }
+}
+
 main>section:nth-child(5)>div>form>input:not(:last-child) {
     max-width: 100%;
     height: 60px;
