@@ -251,3 +251,32 @@ main>section:nth-child(2)>div>.card>div>a {
     line-height: 150%; /* 18px */
     text-decoration: none;
 }
+
+/* TECHNOLOGIES */
+
+main>section:nth-child(3) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+}
+main>section:nth-child(3)>h2 {
+    padding-top: 63px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+main>section:nth-child(3)>div {
+    display: flex;
+    gap: 30px;
+}
+main>section:nth-child(3)>div>.card {
+    width: 255px;
+    height: 226px;
+    background: #FFF;
+}
