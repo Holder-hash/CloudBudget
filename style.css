@@ -34,6 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 5px;
+    transition: .3s;
 }
 
 .burger-btn {
@@ -60,6 +61,11 @@ nav {
 
 .open {
     display: flex;
+    height: 260px;
+    overflow: none;
+}
+.descent {
+    transform: translateY(100px);
 }
 
 @media screen and (max-width: 1100px){
@@ -68,13 +74,14 @@ nav {
         margin: 0 auto;
     }
     nav {
-        display: none;
+        height: 0;
+        overflow: hidden;
+        width: auto;
         position: absolute;
         right: 6.8%;
         top: 100px;
         flex-direction: column;
         align-items: center;
-        width: auto;
         gap: 20px;
     }
     nav>ul {
@@ -141,6 +148,7 @@ nav>ul>li {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    transition: .5s;
 }
 .header-overview>h1 {
     color: #FFF;
