@@ -693,4 +693,7 @@ footer>div>span {
         width: 345px;
         margin: 0 auto;
     }
+    img {
+        max-width: 300px !important;
+    }
 }
