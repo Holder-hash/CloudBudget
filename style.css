@@ -594,7 +594,7 @@ main>section:nth-child(5)>div>form {
 }
 @media screen and (max-width: 600px) {
     main>section:nth-child(5)>div {
-        max-width: 345px;
+        max-width: 100%;
         margin: 0 15px;
     }
     main>section:nth-child(5)>div>form {
