@@ -586,7 +586,7 @@ main>section:nth-child(5)>div>form {
 }
 @media screen and (max-width: 1100px) {
     main>section:nth-child(5)>div {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -595,6 +595,7 @@ main>section:nth-child(5)>div>form {
 @media screen and (max-width: 600px) {
     main>section:nth-child(5)>div {
         max-width: 345px;
+        margin: 0 15px;
     }
     main>section:nth-child(5)>div>form {
         width: 345px;
@@ -686,12 +687,13 @@ footer>div>span {
 @media screen and (max-width: 1100px) {
     footer>div {
         width: 540px;
+        margin: 0 15px;
     }
 }
 @media screen and (max-width: 600px) {
     footer>div {
         width: 345px;
-        margin: 0 auto;
+        margin: 0 15px;
     }
     img {
         max-width: 300px !important;
