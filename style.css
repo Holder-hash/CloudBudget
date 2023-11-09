@@ -603,14 +603,14 @@ main>section:nth-child(5)>div>form {
 }
 @media screen and (max-width: 400px) {
     main>section:nth-child(5)>div>form {
-        width: 245px;
+        max-width: 100%;
     }
     main>section:nth-child(5)>div>form>input {
-        width: 100%;
+        /* width: 100%; */
     }
     main>section:nth-child(5)>div>form>input:last-child {
-        margin-left: 31px;
-        min-width: 281px;
+        /* margin-left: 31px; */
+        min-width: 100%;
         align-self: center;
     }
 }
